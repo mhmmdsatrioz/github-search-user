@@ -81,6 +81,10 @@ body .light {
   color:#ffffff;
   }
 
+  .dark .card-header .general-info a{
+    color:#0178FF;
+  }
+
   .status{
     padding-left: 15px;
   }

@@ -78,7 +78,7 @@ const Card = ({ data, error, loading }) => {
                       fill="#4b6a9b"
                     />
                   </svg>
-                  {location === null ? <p>Not Available</p> : <p>{location}</p>}
+                  {location === null ? <p style={{paddingLeft:'20px'}}>Not Available</p> : <p style={{paddingLeft:'20px'}}>{location}</p>}
                 </div>
                 {/* ====== WEBSITE ====== */}
                 <div className="contact">
