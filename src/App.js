@@ -13,7 +13,6 @@ function App() {
 
   // ======= DATA =======
   const [user, setUser] = useState([]);
-  // use time out
 
   const DataUser =  () => {
     setTimeout(() => {
