@@ -38,7 +38,7 @@ const Card = ({ data, error, loading }) => {
               <Avatar src={avatar_url} className="avatar" alt="avatar" />
               <div className="general-info">
                 <h1>{name}</h1>
-                <a href={html_url} className="username">{`@${login}`}</a>
+                <a target='_blank' href={html_url} className="username">{`@${login}`}</a>
                 <p className="joined"> {date}</p>
               </div>
             </div>
