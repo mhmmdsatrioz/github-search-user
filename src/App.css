@@ -136,27 +136,25 @@ body .light {
 
   .status{
     padding:0;
-    margin:15px;
+    margin:10px;
   }
 
   .section-info{
     margin-top: 10px;
     display:flex;
-    padding:5px;
+    padding:15px 0;
     flex-wrap: wrap;
-    /* height:15vh;
-    bord */
     border-radius: 10px;
     background-color: #F6F9FE;
   }
 
   .section-info .repo{
-    padding-left: 21px;
+    padding:0 10px;
     /* padding:0 15px; */
   }
 
   .section-info .repo p{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .dark .section-info{
