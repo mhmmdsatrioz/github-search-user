@@ -8,7 +8,7 @@ import Card from "./components/Card/Card";
 function App() {
   const [darkTheme, setDarkTheme] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(true);
+  const [error, setError] = useState(false);
   const [name, setName] = useState("octocat");
 
   // ======= DATA =======
@@ -17,17 +17,18 @@ function App() {
 
   const DataUser =  () => {
     setTimeout(() => {
-
     axios
       .get(`https://api.github.com/users/${name}`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setUser(res.data);
+        setError(false);
         setLoading(false);
       })
       .catch((err) => {
-        console.log(err.response.data);
-        setError(false)
+        setLoading(false);
+        // console.log(err.response.data);
+        setError(true)
         // console.log(err.name,'Name')
       });
     },1000)
@@ -36,7 +37,6 @@ function App() {
 
   const handleSearch = (username) => {
     setName(username);
-    console.log(username, "< USER");
   };
 
   useEffect(() => {
