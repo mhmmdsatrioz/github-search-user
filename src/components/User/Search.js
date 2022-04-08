@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './user.css';
 
 
-const User = ({handleSearch}) => {
+const Search = ({handleSearch}) => {
     const [username,setUsername] = useState('');
 
 
@@ -18,7 +18,6 @@ const User = ({handleSearch}) => {
     <div className='container'>
     <input value={username} onChange={(e) => {
       setUsername(e.target.value)
-      console.log(username,'<<< USERNAME')
     }} style={{outline:'none'}} type='text' placeholder="🔍 Search Github username "/>
 
 
@@ -33,4 +32,4 @@ const User = ({handleSearch}) => {
   )
 }
 
-export default User
+export default Search
