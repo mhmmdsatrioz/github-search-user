@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.nav {
+  display:flex;
+  width:100%;
+  /* height:80px; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+* .dark{
+  color:#fff;
+  background-color: #151D2F;
+
+}
+* .light {
+  color:#333;
+  height:100vh;
+  background: #F7F8FE;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .dark{
+  color:#fff;
+  /* width:100%; */
+  /* height:100vh; */
+}
+
+ .dark * {
+  color:#fff;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content input{
+  margin:0 auto;
+  width:65%;
+  /* width:100%; */
+}
+
+.content .card{
+  width: 53%;
+  margin:25px auto;
+  height:50vh;
+  border-radius: 10px;
+  padding:20px 10px;
+}
+
+.dark .content .card {
+  background-color: #1E2A47;
+
+}
+
+.profile{
+  display:flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+
+.profile-user {
+ display:flex;
+ width:84%;
+ justify-content: space-between;
+}
+
+.profile-user .name{
+  padding-left: 20px;
+}
+
+.profile-user .name p{
+  margin:0;
+}
+
+.profile .name h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.profile-user .name .link{
+  color:#0179FE;
+}
+
+.profile-user .name p{
+  padding-top: 15px;
+  color:#697D9B;
+}
+
+.dark .profile-user .name p{
+  color:#fff;
+
+}
+
+ .profile-user .name .bio{
+  display:flex;
+
+  flex-direction: column;
+  width:100%;
+}
+
+.profile-user .name .bio .section-info{
+  display:flex;
+  margin-top: 15px;
+  background-color :#141D2F;
+color:#697D9B;
+border-radius: 10px;
+height:15vh;
+  flex-direction: row;
+}
+
+.profile-user .name .bio .section-info .section-information{
+  padding:0 15px;
+}
+
+
+
+
+.profile .section-right{
+  width:100%;
+}
+
+
+
+.profile .section-right p{
+  font-size: 0.9rem;
+  color:#697D9B;
+  /* padding:10px; */
+}
+
+.dark .profile .section-right p{
+color:#fff;
+}
+
+@media (max-width:639px) {
+
+  .nav{
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .content{
+    padding:15px;
+  }
+  .content .card{
+    width:100%;
   }
 }
+
+
+
